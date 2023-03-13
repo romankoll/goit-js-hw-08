@@ -30,7 +30,7 @@ gallerySectionEll.insertAdjacentHTML('beforeend', addGalleryItemsList);
 new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionsDelay: 250,
-  overlayOpacity: 0.9,
+  overlayOpacity: 0.8,
   howCounter: true,
 });
 
