@@ -8,10 +8,10 @@ const player = new Player(videoEl, {});
 
 player.on('timeupdate', throttle(getTime, 1000));
 
-if (videoCurrentTime !== 0) {
-  player.setCurrentTime(videoCurrentTime);
-}
-
 function getTime(ell) {
   localStorage.setItem('videoplayer-current-time', ell.seconds);
+}
+
+if (videoCurrentTime !== 0) {
+  player.setCurrentTime(videoCurrentTime);
 }
